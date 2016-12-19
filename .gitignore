@@ -1,0 +1,4 @@
+*.swp
+*.o
+dictionary_cipher
+simpleCipher
