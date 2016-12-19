@@ -10,6 +10,16 @@ main() {
     char key[16] = {0},
          t0[9] = "password",
          t1[9] = "bookword";
+    /* as mentioned in the talk,
+     * this actually _could_ be made
+     * relatively secure. Change the
+     * `generate_key` procedure to a
+     * csPRNG, and generate a new key
+     * for each message you encrypt
+     * and never use that key again.
+     * This would turn into a
+     * one-time pad.
+     */
     generate_key(key, 16);
     encrypt(t0, key, 8, 16);
     encrypt(t1, key, 8, 16);

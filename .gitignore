@@ -1,4 +1,6 @@
 *.swp
 *.o
+fnv
+lcg
 dictionary_cipher
 simpleCipher
